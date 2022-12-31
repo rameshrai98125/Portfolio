@@ -1,0 +1,417 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+
+/* --------------------- pre -------------  */
+:root{
+    --color:white:
+    --bg:;
+    --btn-gri:rgba()
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+
+.common-btn{
+    border: none;
+    outline: none;
+    color: white;
+    background: linear-gradient(0deg, rgba(34,167,195,1) 46%, rgba(45,253,233,1) 100%);
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.common-btn:hover{
+background: #4F64EE;
+}
+
+/* --------------------- pre end -------------  */
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/sugarloaf-rock-gfb5debd03_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 72%, 49% 100%, 49% 100%, 0 72%);
+}
+nav{
+    width: 100%;
+    height: 70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    
+   
+    
+}
+
+
+.logo{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-left: 100px;
+}
+.menu{
+    margin-right: 100px;
+    
+}
+.menu a{
+    color: white;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+.menu a:hover{
+   color: cyan;
+   
+}
+a.active,a:hover{
+    color: cyan;
+
+
+}
+/* .section-hero{
+    width: 100%;
+    height: 100vh;
+    background: blue;
+} */
+
+.text{
+    color: white;
+    margin-top: 100px;
+    margin-left: 100px;
+    max-width: 480px;
+    
+}
+.text h1{
+    font-size: 50px;
+}
+.text p{
+    font-size: 25px;
+}
+/* ------------------ about -------------  */
+
+#about{
+    padding: 100px 50px;
+}
+.section-info{
+    font-weight: bold;
+    text-align: center;
+}
+
+.section-info h1{
+    font-size: 50px;
+    position: relative;
+}
+/* .section-info h1::before{
+    content: '';
+    position: absolute;
+    top: 55px;
+    left: 610px;
+    width: 14%;
+    height: 3px;
+    background: #0f0e0e;
+    
+} */
+.section-info p 
+{
+    font-size: 25px;
+    color: cyan;
+}
+.about-row{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.about-left-col{
+    width: 50%;
+
+}
+.about-left-col img{
+    width: 80%;
+    padding: 50px;
+}
+
+.about-right-col{
+    width: 50%;
+}
+.about-right-col h1{
+    margin: 50px 0;
+    position: relative;
+    padding: 10px 0;
+}
+
+.about-btn{
+    margin-top: 70px;
+}
+/* --------------------- skills -----------------  */
+#skills{
+    padding: 100px 50px;
+    background: rgb(9, 8, 8);
+    color: white;
+}
+.skills-row{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    /* background: #000; */
+    background: gray;
+    padding: 30px;
+    margin-top: 20px;
+}
+.skills-left-col{
+    width: 50%;
+    text-align: justify;
+}
+.skills-left-col p{
+    font-size: 20px;
+}
+.skills-right-col{
+    width: 50%;
+}
+.progress-div{
+    margin-left: 100px;
+}
+progress{
+    width: 80%;
+}
+.progress-div p{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* ---------------- services -----------------------  */
+
+#services{
+    width: 100%;
+    padding: 100px 50px;
+}
+.mt{
+    margin: 20px 0;
+}
+.services-row{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.services-box{
+    width: 29%;
+    margin: 20px 10px;
+    /* border: 2px solid black; */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 3px 5px gray;
+    transition: all 0.4s ease;
+}
+.services-box:hover{
+    background: #0081d8;
+    color: white;
+   
+    transform: translateY(-20px);
+}
+.services-box img{
+    width: 100%;
+    
+}
+.services-box h2{
+    margin: 10px 0;
+}
+
+/* -------------------------- contact --------------------- 00 */
+
+#contact{
+    padding: 100px 50px;
+    background: linear-gradient(160deg, cyan 45%,white 0%);
+}
+
+.contact-row{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.contact-left-col{
+    width: 50%;
+}
+.contact-left-col img{
+    width: 90%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.contact-right-col{
+    width: 50%;
+}
+.contact-right-col form{
+  
+    text-align: center;
+}
+.contact-right-col h2{
+    margin-bottom: 20px;
+}
+.contact-right-col input{
+    width: 60%;
+    padding: 10px;
+    margin: 10px;
+}
+.contact-right-col textarea{
+    width: 60%;
+    padding: 10px;
+}
+
+/* ------------------ footer  ------------- 0 */
+#footer{
+    background: cyan;
+    width: 100%;
+    height: 80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#footer h2{
+    color: rgb(77, 72, 72);
+}
+#show{
+    display: none;
+}
+
+/* .scrollElement{
+    position: fixed;
+    bottom: 15%;
+    right: 5%;
+    width: 4rem;
+    height: 4rem;
+    background: gray;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color: aqua;
+    animation: water-wave 3s linear infinite;
+    cursor: pointer;
+}
+@keyframes water-wave{
+    0%{
+        border-radius:77% 23% 88% 12% / 15% 81% 19% 85%  ;
+    }
+    50%{
+        border-radius: 53% 47% 48% 52% / 45% 44% 56% 55% ;
+    }
+    100%{
+        border-radius: 77% 23% 88% 12% / 15% 81% 19% 85%  ;
+    }
+} */
+
+/* ---------------- media ---------------------  */
+@media screen and (max-width:770px) {
+    body{
+
+    }
+    header{
+        background: url(./img/sugarloaf-rock-gfb5debd03_1920.jpg);
+    }
+    .menu a{
+        display: none;
+    }
+
+  
+    .logo{
+        width: 30%;
+        padding-left: 40px;
+        font-size: 1rem;
+    }
+    .text{
+        margin-left: 50px;
+    }
+    #show{
+        display: none;
+    }
+  
+    /* ---------- about -----  */
+    .about-left-col{
+        width: 100%;
+    
+    }
+    .about-left-col img{
+        width: 100%;
+        padding: 50px;
+    }
+    
+    .about-right-col{
+        width: 50%;
+    }
+    /* ----------- skill -------  */
+    .skills-left-col{
+        width: 50%;
+       
+    }
+    .skills-left-col p{
+        /* font-size: 20px; */
+    }
+    .skills-right-col{
+        /* margin-left: 10px; */
+        width: 100%;
+    }
+    .progress-div{
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .common-btn{
+        border: none;
+        outline: none;
+        color: white;
+        background: linear-gradient(0deg, rgba(34,167,195,1) 46%, rgba(45,253,233,1) 100%);
+        padding: 10px 20px;
+        margin-top: 20px;
+        border-radius: 50px;
+    }
+    /* ------------- services  */
+    .services-box{
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .services-box img{
+        width: 100%;
+        
+    }
+    /* --------------- contact -------------  */
+    .contact-left-col{
+        width: 100%;
+       margin-left: 25px;
+       
+    }
+    .contact-right-col{
+        margin: 20px 0;
+        width: 100%;
+    }
+    .contact-right-col form{
+  
+        text-align: none;
+    }
+    /* .scrollElement{
+        display: none;
+    } */
+   
+
+}
+
